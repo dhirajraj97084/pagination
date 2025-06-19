@@ -49,7 +49,7 @@ function  Pagination1() {
          ))}
          <button disabled={currentPage===noOfPages-1} onClick={goToNext} className='p-1 cursor-pointer border m-1 border-black '> ▶</button>
       </div>
-      <div className="main flex flex-wrap px-8 justify-between gap-4">
+      <div className="main container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-4">
         {product.slice(start,end).map((item,index)=>(
           <div key={index} className="div w-32 md:w-56 bg-white shadow-xl border-2 border-black">
              <img src={item.thumbnail} alt={item.title} />

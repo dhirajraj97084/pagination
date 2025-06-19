@@ -19,6 +19,7 @@ import { NavLink } from "react-router-dom";
           <NavLink to="/" className={navLinkStyle}>Home</NavLink>
           <NavLink to="/pagination1" className={navLinkStyle}>Pagination1</NavLink>
           <NavLink to="/pagination2" className={navLinkStyle}>Pagination2</NavLink>
+           <NavLink to="/contact" className={navLinkStyle} onClick={() => setIsOpen(false)}>Contact-Form</NavLink>
         </div>
 
         {/* Mobile Toggle */}
@@ -41,6 +42,7 @@ import { NavLink } from "react-router-dom";
           <NavLink to="/" className={navLinkStyle} onClick={() => setIsOpen(false)}>Home</NavLink>
           <NavLink to="/pagination1" className={navLinkStyle} onClick={() => setIsOpen(false)}>pagination1</NavLink>
           <NavLink to="/pagination2" className={navLinkStyle} onClick={() => setIsOpen(false)}>pagination2</NavLink>
+          <NavLink to="/contact" className={navLinkStyle} onClick={() => setIsOpen(false)}>Contact-Form</NavLink>
         </div>
       )}
     </nav>
