@@ -37,7 +37,7 @@ function  Pagination1() {
 
   return (
     <Layout>
-        <div className='bg-blue-50'>
+        <div className='bg-blue-50 pb-6'>
       <h1 className='text-3xl text-green-600 font-bold flex justify-center pt-8'>Pagiantion1</h1>
       <h1 className='text-2xl font-semibold py-10'>Total Products avialable in my Store is : {product.length}</h1>
       {/* pagination ui */}      
@@ -49,7 +49,7 @@ function  Pagination1() {
          ))}
          <button disabled={currentPage===noOfPages-1} onClick={goToNext} className='p-1 cursor-pointer border m-1 border-black '> ▶</button>
       </div>
-      <div className="main flex flex-wrap px-8 justify-center gap-4">
+      <div className="main flex flex-wrap px-8 justify-between gap-4">
         {product.slice(start,end).map((item,index)=>(
           <div key={index} className="div w-32 md:w-56 bg-white shadow-xl border-2 border-black">
              <img src={item.thumbnail} alt={item.title} />
