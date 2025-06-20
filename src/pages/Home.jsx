@@ -1,10 +1,14 @@
 import React from 'react'
 import Layout from '../component/Layout'
+import AutoCompleteSearchBar from './AutoCompleteSearchBar'
 
 function Home() {
   return (
     <Layout>
-      home
+     <div className="div bg-gray-100">
+       <AutoCompleteSearchBar/>
+     </div>
+   
     </Layout>
   )
 }
